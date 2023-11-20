@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Churning Customer</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="C:/Users/clovi/OneDrive - Ashesi University/Documents/SECOND SEMESTER 2023/[23_SEM1_CS254_B] - Introduction to Artificial Intelligence/Assignments/Clovis Mushagalusa CIRUBAKADERHA_Intro_to_Artificial Intelligence/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="C:/Users/clovi/OneDrive - Ashesi University/Documents/SECOND SEMESTER 2023/[23_SEM1_CS254_B] - Introduction to Artificial Intelligence/Assignments/Clovis Mushagalusa CIRUBAKADERHA_Intro_to_Artificial Intelligence/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Churning Customer Prediction</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h2 class="header center orange-text">Welcome to our Platform, your platform!!!</h2>
+      <div class="row center">
+        <h5 class="header col s12 light">Know more about your customers
+          <br>
+        </h5>
+      </div>
+      
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <label for="_name"><b>Senior Citizen</b></label>
+              <br>
+              <input id="_name" name="SeniorCitizen" placeholder="Senior Citizen" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+
+              <label for="last_name"><b>Dependents</b></label>
+              <br>
+              <input id="last_name" name="Dependents" placeholder="Dependents" type="text" class="validate">
+
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Tenure</b></label>
+              <br>
+              <input id="_name" name="tenure" placeholder="Tenure" type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <label for="_name"><b>Phone Service</b></label>
+              <br>
+              <input id="_name" name="PhoneService" placeholder="Phone Service" type="text" class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Multiple Lines</b></label>
+              <br>
+              <input id="_name" name="MultipleLines" placeholder="Multiple Lines" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Contract</b></label>
+              <br>
+              <input id="_name" name="Contract" placeholder="Contract" type="text" class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Monthly Charges</b></label>
+              <br>
+              <input id="_name" name="MonthlyCharges" placeholder="Monthly Charges" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Total Charges</b></label>
+              <br>
+              <input id="_name" name="TotalCharges" placeholder="Total Charges" type="text" class="validate">
+            </div>
+
+           
+          </div>
+
+          <div class="row center">
+
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      {{pred}}<br>
+
+    </div>
+  </div>
+
+
+  <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">I am an Ashesi University students working on Artificial Intelligence
+            project. The project is bout traing AI models that predict customers's Probability of churning using the following features:
+          - Senior Citizen
+          - Dependents
+          - Tenure
+          - Phone Service
+          - Multiple Lines
+          - Contract
+          - Monthly Charges
+          - Total Charges
+        </p>
+
+
+        </div>
+        <div class="col 18 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">clovis.cirubakaderha@shesi.edu.gh</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
