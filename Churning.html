@@ -36,29 +36,28 @@
           <br>
         </h5>
       </div>
-      
 
       <div class="row">
         <form action='/predict' method="post" class="col s12">
           <div class="row">
             <div class="input-field col s4">
-              <label for="_name"><b>Senior Citizen</b></label>
+              <label for="_name"><b>Contract</b></label>
               <br>
-              <input id="_name" name="SeniorCitizen" placeholder="Senior Citizen" type="text" class="validate">
+              <input id="_name" name="Contract" placeholder="Contract" type="text" class="validate">
             </div>
 
             <div class="input-field col s4">
 
-              <label for="last_name"><b>Dependents</b></label>
+              <label for="last_name"><b>InternetService</b></label>
               <br>
-              <input id="last_name" name="Dependents" placeholder="Dependents" type="text" class="validate">
+              <input id="last_name" name="InternetService" placeholder="Internet Service" type="text" class="validate">
 
             </div>
 
             <div class="input-field col s4">
-              <label for="_name"><b>Tenure</b></label>
+              <label for="_name"><b>Online Security</b></label>
               <br>
-              <input id="_name" name="tenure" placeholder="Tenure" type="text" class="validate">
+              <input id="_name" name="OnlineSecurity" placeholder="Online Security" type="text" class="validate">
             </div>
             <div class="input-field col s4">
               <label for="_name"><b>Phone Service</b></label>
@@ -68,15 +67,21 @@
 
 
             <div class="input-field col s4">
-              <label for="_name"><b>Multiple Lines</b></label>
+              <label for="_name"><b>Tech Support</b></label>
               <br>
-              <input id="_name" name="MultipleLines" placeholder="Multiple Lines" type="text" class="validate">
+              <input id="_name" name="TechSupport" placeholder="Tech Support" type="text" class="validate">
             </div>
 
             <div class="input-field col s4">
-              <label for="_name"><b>Contract</b></label>
+              <label for="_name"><b>Tenure</b></label>
               <br>
-              <input id="_name" name="Contract" placeholder="Contract" type="text" class="validate">
+              <input id="_name" name="tenure" placeholder="tenure" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Streaming TV</b></label>
+              <br>
+              <input id="_name" name="StreamingTV" placeholder="Streaming TV" type="text" class="validate">
             </div>
 
 
@@ -87,9 +92,21 @@
             </div>
 
             <div class="input-field col s4">
-              <label for="_name"><b>Total Charges</b></label>
+              <label for="_name"><b>Phone Service</b></label>
               <br>
-              <input id="_name" name="TotalCharges" placeholder="Total Charges" type="text" class="validate">
+              <input id="_name" name="PhoneService" placeholder="Phone Service" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Paperless Billing</b></label>
+              <br>
+              <input id="_name" name="PaperlessBilling" placeholder="Paperless Billing" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Online Backup</b></label>
+              <br>
+              <input id="_name" name="OnlineBackup" placeholder="Online Backup" type="text" class="validate">
             </div>
 
            
@@ -97,13 +114,13 @@
 
           <div class="row center">
 
-            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict</button>
           </div>
         </form>
       </div>
 
       <br>
-      {{pred}}<br>
+      {{Prediction Zone: }}<br>
 
     </div>
   </div>
@@ -120,14 +137,16 @@
           <h5 class="white-text">Company Bio</h5>
           <p class="grey-text text-lighten-4">I am an Ashesi University students working on Artificial Intelligence
             project. The project is bout traing AI models that predict customers's Probability of churning using the following features:
-          - Senior Citizen
-          - Dependents
-          - Tenure
-          - Phone Service
-          - Multiple Lines
-          - Contract
-          - Monthly Charges
-          - Total Charges
+            - Contract
+            - InternetService
+            - OnlineSecurity
+            - TechSupport
+            - Tenure
+            - StreamingTV
+            - MonthlyCharges
+            - PhoneService
+            - Paperless Billing
+            - OnlineBackup
         </p>
 
 
@@ -146,8 +165,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src=".js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="C:/Users/clovi/OneDrive - Ashesi University\Documents/SECOND SEMESTER 2023/[23_SEM1_CS254_B] - Introduction to Artificial Intelligence/Assignments/Clovis Mushagalusa CIRUBAKADERHA_Intro_to_Artificial Intelligence/materialize.js"></script>
+  <script src="C:/Users/clovi/OneDrive - Ashesi University/Documents/SECOND SEMESTER 2023/[23_SEM1_CS254_B] - Introduction to Artificial Intelligence/Assignments/Clovis Mushagalusa CIRUBAKADERHA_Intro_to_Artificial Intelligence/init.js"></script>
 
 </body>
 
